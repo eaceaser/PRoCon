@@ -1,0 +1,45 @@
+//////////////////
+// Zone file to use with AlphaPack v0.2
+// copy & paste the procon.protected.zones.add lines into your 
+// servers config under procon/config before you start procon
+//
+//
+//////////////////
+// Conquest
+//////////////////
+procon.protected.zones.add "bGV2ZWxzL21wXzAwMTEwMTY3MDU5NjU=" "levels/mp_001" "EFAE_PROTECT_U.SARMY" 8 -154 -274 0 -104 -219 0 -110 -187 0 -113 -168 0 -131 -160 0 -193 -186 0 -240 -242 0 -194 -286 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwMTIyOTE3MDky" "levels/mp_001" "EFAE_PROTECT_RUSSIANARMY" 8 48 210 0 80 174 0 167 266 0 174 287 0 135 322 0 73 295 0 68 270 0 79 246 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwMzE1OTcxNzY0NzU=" "levels/mp_003" "EFAE_PROTECT_RUSSIANARMY" 8 83 89 0 119 88 0 134 123 0 119 158 0 84 173 0 49 158 0 49 120 0 70 88 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwMzk4NjI5Nzk4NA==" "levels/mp_003" "EFAE_PROTECT_U.SARMY" 8 96 -238 0 131 -223 0 146 -188 0 131 -153 0 58 -115 0 22 -138 0 21 -184 0 61 -223 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwNTU4NDkyOTgyOA==" "levels/mp_005" "EFAE_PROTECT_U.SARMY" 8 182 304 0 245 352 0 291 387 0 292 437 0 220 532 0 92 482 0 -22 479 0 133 297 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwNTE0Nzc1MjUyMjM=" "levels/mp_005" "EFAE_PROTECT_RUSSIANARMY" 8 -479 -201 0 -364 -231 0 -286 -182 0 -278 -139 0 -410 40 0 -481 6 0 -505 -72 0 -479 -85 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwNmNxNDk0MDA1ODMx" "levels/mp_006cq" "EFAE_PROTECT_U.SARMY" 8 252 201 0 319 144 0 373 167 0 375 261 0 315 333 0 234 311 0 192 280 0 223 225 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwNmNxMjAwOTA3MDkyNQ==" "levels/mp_006cq" "EFAE_PROTECT_RUSSIANARMY" 8 3 -77 0 54 -95 0 82 -76 0 121 -54 0 20 54 0 -25 40 0 -37 2 0 -31 -27 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwNzY5NzI0NTg5MA==" "levels/mp_007" "EFAE_PROTECT_U.SARMY" 8 216 -231 0 246 -233 0 257 -185 0 232 -123 0 209 -125 0 180 -140 0 170 -180 0 181 -216 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwNzE4NzE2ODM4MTY=" "levels/mp_007" "EFAE_PROTECT_RUSSIANARMY" 8 -126 -167 0 -95 -156 0 -82 -121 0 -104 -96 0 -117 -73 0 -162 -67 0 -176 -117 0 -161 -156 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwOGNxODE1Mjk1NjU4" "levels/mp_008cq" "EFAE_PROTECT_U.SARMY" 8 248 -275 0 315 -287 0 364 -227 0 364 -183 0 272 -118 0 215 -179 0 185 -216 0 212 -259 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwOGNxNDc0Mzk2MzQ4" "levels/mp_008cq" "EFAE_PROTECT_RUSSIANARMY" 8 -105 -248 0 -87 -177 0 -86 -143 0 -101 -108 0 -136 -93 0 -193 -104 0 -192 -202 0 -138 -229 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwOWNxMTMxNTQ3MTc3OA==" "levels/mp_009cq" "EFAE_PROTECT_RUSSIANARMY" 8 257 207 0 266 243 0 259 288 0 244 323 0 209 338 0 148 326 0 140 301 0 223 214 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAwOWNxMTM4NTA1NTU5Mg==" "levels/mp_009cq" "EFAE_PROTECT_U.SARMY" 8 36 -28 0 75 -27 0 93 5 0 46 73 0 -14 133 0 -86 128 0 -93 55 0 -65 19 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAxMmNxMjM3MDQzMDYx" "levels/mp_012cq" "EFAE_PROTECT_U.SARMY" 8 237 -360 0 276 -320 0 299 -268 0 260 -210 0 61 -207 0 65 -241 0 90 -278 0 133 -365 0
+procon.protected.zones.add "bGV2ZWxzL21wXzAxMmNxNjcyNDM3MDk2" "levels/mp_012cq" "EFAE_PROTECT_RUSSIANARMY" 8 -42 335 0 19 320 0 58 324 0 107 363 0 75 503 0 -12 503 0 -74 403 0 -76 376 0
+procon.protected.zones.add "bGV2ZWxzL2JjMV9oYXJ2ZXN0X2RheV9jcTY1MzU3MDM3NA==" "levels/bc1_harvest_day_cq" "EFAE_PROTECT_RUSSIANARMY" 8 135 787 0 262 809 0 328 836 0 290 900 0 60 930 0 21 882 0 10 831 0 61 794 0
+procon.protected.zones.add "bGV2ZWxzL2JjMV9oYXJ2ZXN0X2RheV9jcTEzODg5MDAxMDE=" "levels/bc1_harvest_day_cq" "EFAE_PROTECT_U.SARMY" 8 466 -116 0 641 -98 0 634 24 0 551 56 0 500 55 0 407 40 0 363 3 0 320 -60 0
+procon.protected.zones.add "bGV2ZWxzL2JjMV9vYXNpc19jcTIwMjIzMDU3MzQ=" "levels/bc1_oasis_cq" "EFAE_PROTECT_RUSSIANARMY" 8 366 492 0 436 509 0 474 540 0 457 594 0 393 595 0 358 580 0 343 545 0 306 490 0
+procon.protected.zones.add "bGV2ZWxzL2JjMV9vYXNpc19jcTE0ODgzNjkyNTM=" "levels/bc1_oasis_cq" "EFAE_PROTECT_U.SARMY" 8 422 111 0 490 149 0 510 186 0 499 235 0 416 225 0 343 216 0 345 188 0 405 161 0
+procon.protected.zones.add "bGV2ZWxzL21wX3NwXzAwNWNxMTY1MDg2NTgxMg==" "levels/mp_sp_005cq" "EFAE_PROTECT_RUSSIANARMY" 8 -446 557 0 -409 581 0 -368 602 0 -286 702 0 -355 752 0 -550 716 0 -553 589 0 -541 537 0
+procon.protected.zones.add "bGV2ZWxzL21wX3NwXzAwNWNxMzQ1MzQzMTUw" "levels/mp_sp_005cq" "EFAE_PROTECT_U.SARMY" 8 -251 -779 0 -118 -727 0 -79 -638 0 -83 -522 0 -157 -522 0 -229 -544 0 -344 -657 0 -321 -716 0
+// Vietnam
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDJjcTE0NTA4MTcwOTM=" "levels/nam_mp_002cq" "EFAE_PROTECT_U.SARMY" 8 -105 -298 0 -70 -283 0 -34 -261 0 -25 -248 0 -113 -186 0 -140 -213 0 -155 -248 0 -140 -283 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDJjcTU1ODQxNzc4OA==" "levels/nam_mp_002cq" "EFAE_PROTECT_NVA" 8 -188 123 0 -145 164 0 -130 199 0 -145 234 0 -180 249 0 -215 234 0 -250 169 0 -209 133 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDNjcTYyMzg0NjA=" "levels/nam_mp_003cq" "EFAE_PROTECT_U.SARMY" 8 154 -132 0 189 -117 0 239 -84 0 235 -40 0 201 -11 0 64 -41 0 13 -77 0 7 -128 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDNjcTc1MjU3NTI5NA==" "levels/nam_mp_003cq" "EFAE_PROTECT_NVA" 8 215 276 0 250 291 0 265 326 0 250 361 0 215 376 0 131 362 0 94 330 0 191 226 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDVjcTI2MjgxNzY3NA==" "levels/nam_mp_005cq" "EFAE_PROTECT_U.SARMY" 8 122 205 0 158 203 0 213 256 0 180 336 0 110 359 0 0 338 0 -8 266 0 56 215 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDVjcTY1NjQ2NzkwMA==" "levels/nam_mp_005cq" "EFAE_PROTECT_NVA" 8 227 -149 0 247 -117 0 262 -41 0 247 -6 0 202 34 0 160 21 0 135 -58 0 133 -141 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDZjcTEzMTI3NzI5NjU=" "levels/nam_mp_006cq" "EFAE_PROTECT_NVA" 8 -120 -282 0 -5 -274 0 -16 -202 0 -64 -146 0 -103 -135 0 -166 -199 0 -193 -213 0 -155 -267 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDZjcTIxMzA1NTM2NTU=" "levels/nam_mp_006cq" "EFAE_PROTECT_U.SARMY" 8 144 139 0 178 165 0 176 214 0 164 278 0 125 282 0 65 271 0 43 234 0 33 210 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDdjcTU1NTY2ODMyOA==" "levels/nam_mp_007cq" "EFAE_PROTECT_NVA" 8 30 110 0 93 158 0 94 199 0 87 254 0 40 268 0 -10 254 0 -37 209 0 -9 155 0
+procon.protected.zones.add "bGV2ZWxzL25hbV9tcF8wMDdjcTE3NDQwMjY3Nzc=" "levels/nam_mp_007cq" "EFAE_PROTECT_U.SARMY" 8 -141 -283 0 -84 -280 0 -37 -269 0 -65 -207 0 -118 -182 0 -191 -199 0 -200 -227 0 -199 -281 0
+//////////////////
+// SQDM
+//////////////////

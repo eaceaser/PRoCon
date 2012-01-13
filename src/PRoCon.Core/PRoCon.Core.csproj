@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88912CB7-E755-476D-AFC2-CA0C34A29465}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRoCon.Core</RootNamespace>
+    <AssemblyName>PRoCon.Core</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\ziplib\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\Account.cs" />
+    <Compile Include="Accounts\AccountDictionary.cs" />
+    <Compile Include="Accounts\AccountPrivilege.cs" />
+    <Compile Include="Accounts\AccountPrivilegeDictionary.cs" />
+    <Compile Include="AsyncStyleSetting.cs" />
+    <Compile Include="AutoUpdates\AutoUpdater.cs" />
+    <Compile Include="AutoUpdates\UpdateDownloader.cs" />
+    <Compile Include="Battlemap\MapZoneDictionary.cs" />
+    <Compile Include="Battlemap\MapZoneDrawing.cs" />
+    <Compile Include="Battlemap\ZoneAction.cs" />
+    <Compile Include="Battlemap\ZoneTagList.cs" />
+    <Compile Include="CBanInfo.cs" />
+    <Compile Include="CDownloadFile.cs" />
+    <Compile Include="ConnectionDictionary.cs" />
+    <Compile Include="Consoles\ChatConsole.cs" />
+    <Compile Include="Consoles\Chat\ChatMessage.cs" />
+    <Compile Include="Consoles\ConnectionConsole.cs" />
+    <Compile Include="Consoles\PluginConsole.cs" />
+    <Compile Include="Consoles\PunkbusterConsole.cs" />
+    <Compile Include="CountryLookup.cs" />
+    <Compile Include="Events\CapturableEvents.cs" />
+    <Compile Include="Events\CapturedEvent.cs" />
+    <Compile Include="Events\EventCaptures.cs" />
+    <Compile Include="Events\EventType.cs" />
+    <Compile Include="Events\Expression.cs" />
+    <Compile Include="GameMods.cs" />
+    <Compile Include="GeoIPCountry.cs" />
+    <Compile Include="HttpServer\Cache\HttpWebServerCacheType.cs" />
+    <Compile Include="HttpServer\Cache\HttpWebServerCacheSettings.cs" />
+    <Compile Include="HttpServer\HttpWebServer.cs" />
+    <Compile Include="HttpServer\HttpWebServerRequest.cs" />
+    <Compile Include="HttpServer\HttpWebServerRequestData.cs" />
+    <Compile Include="HttpServer\HttpWebServerResponseData.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="Packages\Package.cs" />
+    <Compile Include="Packages\PackageDictionary.cs" />
+    <Compile Include="Packages\PackageManager.cs" />
+    <Compile Include="Packages\PackageType.cs" />
+    <Compile Include="Plugin\PRoConPluginAPI.cs" />
+    <Compile Include="Plugin\Plugin.cs" />
+    <Compile Include="Plugin\PluginDetails.cs" />
+    <Compile Include="Plugin\PluginDictionary.cs" />
+    <Compile Include="Remote\ConnectionState.cs" />
+    <Compile Include="TextChatModeration\PlayerModerationLevelType.cs" />
+    <Compile Include="Remote\Layer\BFBC2LayerClient.cs" />
+    <Compile Include="Remote\Layer\FrostbiteLayerClient.cs" />
+    <Compile Include="Remote\Layer\MoHLayerClient.cs" />
+    <Compile Include="Remote\Layer\FrostbiteLayerConnection.cs" />
+    <Compile Include="Logging\LogEntry.cs" />
+    <Compile Include="Battlemap\MapGeometry.cs" />
+    <Compile Include="Maps\MaplistEntry.cs" />
+    <Compile Include="Players\Items\DamageTypes.cs" />
+    <Compile Include="Players\Items\Kits.cs" />
+    <Compile Include="Players\Items\Specialization.cs" />
+    <Compile Include="Players\Items\SpecializationDictionary.cs" />
+    <Compile Include="Players\Items\SpecializationSlots.cs" />
+    <Compile Include="Players\Items\Weapon.cs" />
+    <Compile Include="Players\Items\WeaponDictionary.cs" />
+    <Compile Include="Players\Items\WeaponSlots.cs" />
+    <Compile Include="Plugin\Commands\CapturedCommand.cs" />
+    <Compile Include="Plugin\Commands\ConfirmationDictionary.cs" />
+    <Compile Include="Plugin\Commands\ConfirmationEntry.cs" />
+    <Compile Include="Plugin\Commands\ExecutionScope.cs" />
+    <Compile Include="Plugin\Commands\ExecutionRequirements.cs" />
+    <Compile Include="Plugin\Commands\MatchArgument.cs" />
+    <Compile Include="Plugin\Commands\MatchArgumentFormat.cs" />
+    <Compile Include="Plugin\Commands\MatchArgumentFormatTypes.cs" />
+    <Compile Include="Plugin\Commands\MatchCommand.cs" />
+    <Compile Include="Plugin\Commands\MatchDictionaryKey.cs" />
+    <Compile Include="Plugin\IPRoConPluginInterface2.cs" />
+    <Compile Include="Kill.cs" />
+    <Compile Include="Players\Inventory.cs" />
+    <Compile Include="Remote\Layer\PRoConLayerClient.cs" />
+    <Compile Include="Remote\Layer\LayerClientDictionary.cs" />
+    <Compile Include="Remote\Layer\PRoConLayer.cs" />
+    <Compile Include="LevelVariable.cs" />
+    <Compile Include="LevelVariableContext.cs" />
+    <Compile Include="LevelVariableContextType.cs" />
+    <Compile Include="Lists\ListsSettings.cs" />
+    <Compile Include="Localization\CLocalization.cs" />
+    <Compile Include="Localization\LocalizationDictionary.cs" />
+    <Compile Include="CMap.cs" />
+    <Compile Include="Logging\Loggable.cs" />
+    <Compile Include="Options\OptionsSettings.cs" />
+    <Compile Include="Options\TrustedHostWebsitePort.cs" />
+    <Compile Include="Players\CPlayerInfo.cs" />
+    <Compile Include="CPlayerSubset.cs" />
+    <Compile Include="Plugin\CPluginVariable.cs" />
+    <Compile Include="CPrivileges.cs" />
+    <Compile Include="CPunkbusterInfo.cs" />
+    <Compile Include="NotificationList.cs" />
+    <Compile Include="Players\PlayerDictionary.cs" />
+    <Compile Include="Players\PlayerListSettings.cs" />
+    <Compile Include="Plugin\PluginManager.cs" />
+    <Compile Include="Plugin\CPRoConMarshalByRefObject.cs" />
+    <Compile Include="Plugin\CPRoConPluginCallbacks.cs" />
+    <Compile Include="Plugin\CPRoConPluginLoaderFactory.cs" />
+    <Compile Include="Plugin\IPRoConPluginInterface3.cs" />
+    <Compile Include="Plugin\IPRoConPluginInterface4.cs" />
+    <Compile Include="Plugin\IPRoConPluginInterface5.cs" />
+    <Compile Include="Plugin\IPRoConPluginInterface6.cs" />
+    <Compile Include="Point3D.cs" />
+    <Compile Include="Privileges.cs" />
+    <Compile Include="CServerInfo.cs" />
+    <Compile Include="PRoConApplication.cs" />
+    <Compile Include="Remote\BFBC2Client.cs" />
+    <Compile Include="Remote\FrostbiteConnection.cs" />
+    <Compile Include="Remote\FrostbiteClient.cs" />
+    <Compile Include="Remote\MoHClient.cs" />
+    <Compile Include="Remote\PRoConClient.cs" />
+    <Compile Include="TextChatModeration\ServerModerationModeType.cs" />
+    <Compile Include="Settings\ServerSettings.cs" />
+    <Compile Include="Settings\ServerSettingsSerializer.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="CTeamName.cs" />
+    <Compile Include="TeamScore.cs" />
+    <Compile Include="TextChatModeration\TextChatModerationDictionary.cs" />
+    <Compile Include="TextChatModeration\TextChatModerationEntry.cs" />
+    <Compile Include="TimeoutSubset.cs" />
+    <Compile Include="CustomClass.cs" />
+    <Compile Include="CustomProperty.cs" />
+    <Compile Include="CustomPropertyDescriptor.cs" />
+    <Compile Include="enumBoolOnOff.cs" />
+    <Compile Include="enumBoolYesNo.cs" />
+    <Compile Include="Plugin\IPRoConPluginInterface.cs" />
+    <Compile Include="Remote\Packet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Battlemap\MapZone.cs" />
+    <Compile Include="Variables\Variable.cs" />
+    <Compile Include="Variables\VariableDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

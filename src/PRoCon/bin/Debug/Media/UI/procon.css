@@ -1,0 +1,467 @@
+/* CSS Document */
+/* created by Sinex */
+
+/* Default Site Items */
+
+.clear {
+	clear:both;
+	padding:0px;
+	height:0px;
+	margin:0px;
+}
+
+body {
+	background: #5f5e5e url('images/body-bg.png') repeat-x scroll;
+	font-family:Tahoma;
+	font-size:11px;
+	color:#2C2C29;
+	margin:0px;
+}
+
+hr {
+	margin:0px;
+}
+
+/* Default Site Layout */
+
+div#content {
+	position:relative;
+	margin:0px auto;
+	width:940px;
+	height:100%;
+}
+
+div#mainheader {
+	background-image:url(images/headerimage.png);
+	background-repeat:no-repeat;
+	height:100px;
+	cursor:pointer;
+}
+
+div#mainbody {
+	position:absolute;
+	background-color:#FFF;
+	background-image:url(images/sidebarbg.jpg);
+	background-position:right;
+	background-repeat:repeat-y;
+	border:1px solid #DDD;
+	width:940px;
+	margin:1px auto;
+	top:65px;
+}
+
+div#maincontent {
+	float:left
+}
+
+div#sidebar {
+	float:right;
+	width:250px;
+}
+
+/* Site Header */
+.headerimg {
+	margin:0px auto 0px 10px;
+}
+
+/* Main Content */
+.mainitem {
+	border:1px solid #DDD;
+	margin:3px 0px;
+}
+
+.mainitemheader {
+	background-image:url(images/itemheader.jpg);
+	background-repeat:repeat-x;
+	height:25px;
+	font-weight:bold;
+	color:#CCC;
+	margin:0px;
+	padding:0px 10px;
+}
+
+.mainitemcontent {
+	margin:0px;
+	padding:2px 10px 15px 10px;
+	text-align:justify;
+}
+
+.mainitemcontentpromotion {
+	text-align:center;
+}
+
+.mainitemcontentpromotion a {
+	cursor: pointer;
+}
+
+/* Sidebar Content */
+.sidebarcontentbox {
+	margin:10px 10px;
+}
+
+/* Connection Content */
+#pStartPage-divConnections a {
+	cursor: pointer;
+}
+
+.connectioninfo {
+	vertical-align: top;
+}
+
+div #pStartPage-lblNoConnections {
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	margin: 20px;
+}
+
+div#pStartPage-divConnections {
+	padding:10px;
+	
+    background-image: url( 'images/frostbite.png' );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.connectionOptions {
+	display:none;
+}
+
+div#pStartPage-lblConnectionsSummary {
+	padding: 0px 10px;
+	font-weight:bold;
+	margin: 0px 0px 15px 0px;
+}
+
+#pStartPage-tblConnections tbody tr:hover { 
+    background-image: url( 'images/connection-bg.png' );
+    background-repeat: repeat-y;
+    background-position: left;
+/* background: #f2f2f2; */
+} 
+
+div#monthlySummary {
+	padding:10px;
+	font-weight:bold;
+}
+
+/*
+.serveronline{
+	color:#090;
+	font-weight:bold;
+	padding-left:10px;
+}
+
+.serveroffline{
+	color:#E00;
+	font-weight:bold;
+	padding-left:10px;
+}
+*/
+/* RSSFeed Content */
+
+.rsstext {
+	line-height:18px;
+}
+
+div#rssFeed h3 {
+	font-size:14px;
+	font-weight:bold;
+	color:#036;
+	margin:5px 0px -10px 0px;
+	cursor:pointer;
+	border-bottom:1px solid #DCDCDB;
+}
+
+div#rssFeed {
+	padding: 5px 15px 15px 15px;
+}
+
+.articledate {
+	font-size:10px;
+	color:#F69B0F;
+	font-weight:bold;
+}
+
+/* Donation Content */
+
+.sidebarcontentbox h3 {
+	font-size:14px;
+	color:#036;
+	margin:5px 0px -10px 0px;
+	cursor:pointer;
+}
+
+.sidebarcontentbox p {
+	margin: 10px 0px;
+}
+
+/* Donor Wall Content */
+
+.donorbox p {
+	margin: 10px 0px 0px 0px;
+}
+
+.donator {
+	font-size: 14px;
+	font-weight: bold;
+	color: #F69B0F;
+	cursor: pointer;
+}
+
+.amount {
+	font-size: 12px;
+	font-weight: bold;
+	color: #036;
+}
+
+.datetime {
+	background-color: #F5F5F5;
+	padding-left: 175px;
+	margin-top: 20px;
+}
+
+.commentbox {
+	padding: 15px;
+}
+
+.commenttext {
+	font-size: 14px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.connectionOptions {
+	vertical-align: top;
+	color:#3366ff;
+}
+
+.connectionOptions a {
+	vertical-align: top;
+	color:#3366ff;
+}
+
+.connectionOptions a:hover {
+	vertical-align: top;
+	color:#3366ff;
+	text-decoration: underline;
+}
+
+/*
+.connectionOptions .deleteConnection {
+
+}
+*/
+
+.additionalinfo {
+	padding-left: 16pt;
+	font-size: x-small;
+	margin: 0px 0px 10px 0px;
+}
+
+/* info ticker */
+
+.newsticker-jcarousellite { width:512px; height: 64px; padding: 10px 88px 10px 88px;}
+.newsticker-jcarousellite ul li{ list-style:none; display:block; padding-bottom:1px; margin-bottom:5px; width:512px; height: 64px;}
+.newsticker-jcarousellite .thumbnail { float:left; width:110px; }
+.newsticker-jcarousellite .info { float:right; width:190px; }
+.newsticker-jcarousellite .info span.cat { display: block; font-size:10px; color:#808080; }
+.clear { clear: both; }
+
+/* new connections form */
+
+.subformlabel {
+	font-size: x-small;
+	margin: 0px 0px 5px 0px;
+}
+
+#createconnection table {
+	margin: 10px 0px;
+}
+
+#createconnection legend {
+	font-size:14px;
+	color:#036;
+	font-weight:bold;
+}
+
+/* BUTTONS */
+
+.buttons a {
+    display:block;
+    float:right;
+    margin:0 12px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:4px 10px 5px 7px; /* Links */
+	vertical-align:text-top;
+}
+
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+
+}
+
+/* STANDARD */
+
+/*
+button:hover, .buttons a:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.buttons a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+*/
+
+/* POSITIVE */
+
+button.positive, .buttons a.positive{
+    color:#529214;
+}
+.buttons a.positive:hover, button.positive:hover{
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+.buttons a.positive:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}
+
+/* DISABLED */
+
+button.disabled, .buttons a.disabled{
+    color:#000000;
+	filter: alpha(opacity=20);
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+}
+
+/* NEGATIVE */
+
+.buttons a.negative, button.negative{
+    color:#d12f19;
+}
+.buttons a.negative:hover, button.negative:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+.buttons a.negative:active{
+    background-color:#d12f19;
+    border:1px solid #d12f19;
+    color:#fff;
+}
+
+/* Forms General */
+
+label {
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;
+}
+
+fieldset {
+	margin:10px 10px;
+}
+
+.activeField {
+	background-image: none;
+	background-color: #ffffff;
+	border: solid 1px #000000;
+	padding: 2px;
+}
+
+.idleField {
+    border: solid 1px #000000;
+    background-image: url( 'images/form-bg.png' );
+    background-repeat: repeat-x;
+    background-position: top;
+	padding: 2px;
+}
+
+/*
+input[type="text"], input[type="password"], textarea, select, option
+{
+    border: solid 1px #000000;
+    background-image: url( 'images/form-bg.png' );
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus
+{
+    background-image: none;
+    background-color: #ffffff;
+    border: solid 1px #33677F;
+}*/
+
+/* Ajax style loading*/
+
+.loading {
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

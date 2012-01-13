@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>phogue.net design</title>
+<link href="procon.css" rel="stylesheet" type="text/css" />
+<link href="procon.tabs.css" rel="stylesheet" type="text/css" />
+<link href="jquery.fastconfirm.css" rel="stylesheet" type="text/css" />
+<link href="procon.datatables.css" rel="stylesheet" type="text/css" />
+
+
+<script type='text/javascript' src='js/jquery.js?ver=1.4.2'></script> 
+<script type='text/javascript' src='js/jcarousellite_1.0.1.min.js'></script> 
+<script type='text/javascript' src='js/jquery.jstepper.min.js'></script> 
+<script type='text/javascript' src='js/jquery-ui-1.8.5.custom.min.js'></script> 
+<script type='text/javascript' src='js/jquery.fastconfirm.js'></script> 
+<script type='text/javascript' src='js/ui.tabs.js'></script> 
+<script type='text/javascript' src='js/jquery.dataTables.min.js'></script> 
+<script type='text/javascript' src='js/procon.startpage.js'></script> 
+
+</head>
+
+<body>
+
+<div id="content">
+  <div id="mainheader" onClick="window.external.HREF('http://phogue.net')">
+  	<!--<img src="header-image.png" class="headerimg"/>-->
+  </div>
+  
+  <div id="mainbody">
+  	<div id="maincontent">
+      <div class="mainitem">
+        <table width="688px" border="0">
+          <tr>
+            <td colspan="2" class="mainitemheader" id="pStartPage-lblMyConnections">My Connections</td>
+          </tr>
+          <tr>
+            <td colspan="2"> 
+				<div id="pStartPage-lblNoConnections">You do not have any connections.  Get started by creating a connection to your game server or layer</div>
+				<div id="pStartPage-divConnections">
+					<table id="pStartPage-tblConnections" width="100%" Height="100%">
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</td>
+          </tr>
+          <tr>
+            <td>
+				<div id="pStartPage-lblConnectionsSummary"></div>
+			</td>
+            <td>
+				<div class="buttons">
+					<a href="#" class="positive" id="pStartPage-lnkCreateConnection">
+						<img src="images/create-connection.png" alt=""/>
+						<span id="pStartPage-lblCreateConnection">Create Connection</span>
+					</a>
+				</div>
+			</td>
+          </tr>
+		  <tr>
+			<td colspan="2">
+				<div id="pStartPage-divCreateConnection" class="mainitemcontent">
+					<form>
+						<fieldset>
+							<legend id="pStartPage-lblCreateConnectionLegend">Create Connection</legend>
+
+							<table>
+								<tr>
+									<td width="1%">
+										<label for="hostname" id="pStartPage-lblConnectionsHostnameIp">Hostname/IP</label><br /><input type="text" name="hostname" id="hostname" value="" />
+									</td>
+									<td>
+										<label for="port" id="pStartPage-lblConnectionsPort">Port</label><br /><input type="text" name="port" id="port" value="48888" maxlength="5" size="6" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label for="username" id="pStartPage-lblConnectionsUsername">Username</label><br /><input type="text" name="username" id="username" value="" />
+										<p class="subformlabel" id="pStartPage-lblConnectionsUsernameExplanation">You only require a username to login to a PRoCon layer</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="password" id="pStartPage-lblConnectionsPassword">Password</label><br /><input type="password" name="password" id="password" value="" />
+									</td>
+									<td>
+										<div class="buttons">
+											<a href="#" class="negative" id="pStartPage-lnkCancelCreateConnection">
+												<img src="images/error.png" alt=""/>
+												<span id="pStartPage-lblCancelCreateConnection">Cancel</span>
+											</a>
+											<a href="#" class="disabled" id="pStartPage-lnkConnectCreateConnection">
+												<img src="images/online.png" alt=""/>
+												<span id="pStartPage-lblConnectCreateConnection">Connect</span>
+											</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</form>
+				</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+	  
+		<div class="mainitemcontentpromotion">
+			<div id='newsticker-demo'>
+				<div class='newsticker-jcarousellite'>
+					<ul>
+						<li>
+							<a onClick="window.external.HREF('http://phogue.net/forum/')"><img src="images/promotions/community.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+      
+        <div id="container-5"> 
+            <ul> 
+                <li><a href="#fragment-13"><span><img src="images/datatables/rss_header.png"/> <b id="pStartPage-tabPhogueNetNewsFeed">News Feed</b></span></a></li> 
+                <li><a href="#fragment-14"><span><img src="images/datatables/package_header.png"/> <b id="pStartPage-tabPackages">Packages</b></span></a></li> 
+            </ul>
+			<div id="fragment-13"> 
+                <div id="rssFeed"></div>
+            </div> 
+            <div id="fragment-14"> 
+               
+				<table cellpadding="0" cellspacing="0" border="0" class="display" id="pStartPage-tblPackages" width="100%"> 
+					<thead> 
+						<tr> 
+							<th></th> 
+							<th>UID</th> 
+							<th>Type</th> 
+							<th>Name</th> 
+							<th>Version</th> 
+							<th>Last Update</th> 
+							<th>Status</th> 
+							<th>Downloads</th> 
+							<th>Image Link</th> 
+							<th>Discuss/Feedback</th> 
+							<th>Author</th> 
+							<th>Website</th> 
+							<th>Tags</th> 
+							<th>Description</th> 
+							<th>Status Code</th>
+							<th>Package Size</th>
+							<th>Layer Install Status</th>
+							<th>Install Package</th>
+						</tr> 
+					</thead> 
+					<tbody> 
+
+					</tbody> 
+					<tfoot> 
+						<tr> 
+							<th></th> 
+							<th>UID</th> 
+							<th>Type</th> 
+							<th>Name</th> 
+							<th>Version</th> 
+							<th>Last Update</th> 
+							<th>Status</th> 
+							<th>Downloads</th> 
+							<th>Image Link</th> 
+							<th>Forum Link</th> 
+							<th>Author</th> 
+							<th>Website</th> 
+							<th>Tags</th> 
+							<th>Description</th> 
+							<th>Status Code</th>
+							<th>Package Size</th>
+							<th>Layer Install Status</th>
+							<th>Install Package</th>
+						</tr> 
+					</tfoot> 
+				</table> 
+            </div> 
+        </div>
+
+    </div>
+    
+    <div id="sidebar">
+	
+      <div class="sidebarcontentbox">
+        <h3 id="pStartPage-lblDonate">Donate</h3>
+        <form id="donateplusform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" id="cmd" name="cmd" value="_donations"> 
+        <p class="donate_amount"><label for="amount" id="pStartPage-lblDonationAmount">Donation Amount</label><br /><input type="text" name="amount" id="amount" value="10" /><br /><small>(<span id="pStartPage-lblDonationAmount-Currency">Currency: USD</span>)</small></p> 
+        <p class="recognition_wall"><input type="checkbox" value="1" id="pStartPage-chkRecognize"/><label id="pStartPage-lblRecognize"> I want my kudos!</label></p> 
+        <div id="wallinfo"> 
+        <p class="show_onwall" id="wallops"><label for="show_onwall" id="pStartPage-chkRecognize-lblShowOnWall">Show on Wall</label><br /><select name="item_number"> 
+          <option value="0:1" id="pStartPage-chkRecognize-optDoNotShow">Do not show any information</option> 
+          <option value="1:1" id="pStartPage-chkRecognize-optAmountDetailsComments">Amount, Details &amp; Comments</option> 
+          <option value="2:1" id="pStartPage-chkRecognize-optDetailsCommentsOnly">User Details &amp; Comments Only</option> 
+        </select></p> 
+        <p class="donor_name"><label for="donor_name" id="pStartPage-chkRecognize-lblName">Name</label><br /><input type="text" name="on0" id="donor_name" /></p> 
+        <p class="donor_email"><label for="donor_email" id="pStartPage-chkRecognize-lblEmail">Email</label><br /><input type="text" name="os0" id="donor_email" /></p> 
+        <p class="donor_url"><label for="donor_url" id="pStartPage-chkRecognize-lblWebsite">Website</label><br /><input type="text" name="on1" id="donor_url" /></p> 
+        <p  class="donor_comment"><label for="donor_comment" id="pStartPage-chkRecognize-lblComments">Comments</label><br /><textarea name="os1" id="donor_comment" rows="4" cols="45" style="width:90%"></textarea><br />
+        <span id="charinfo">Write your comment within 199 characters.</span> </p>
+		<p class="donor_comment" id="pStartPage-chkRecognize-lblRecognizeTime">Your message may take up to an hour to appear on the wall.</p></div> 
+        <input type="hidden" name="notify_url" value="http://phogue.net/wp-content/plugins/donate-plus/paypal.php"> 
+        <input type="hidden" name="item_name" value="Donation to phogue.net"> 
+        <input type="hidden" name="business" value="phogue@phogue.net"> 
+        <input type="hidden" name="lc" value="US"> 
+        <input type="hidden" name="no_note" value="1"> 
+        <input type="hidden" name="no_shipping" value="1"> 
+        <input type="hidden" name="rm" value="1"> 
+        <input type="hidden" name="return" value="http://phogue.net?thankyou=true"> 
+        <input type="hidden" name="currency_code" value="USD"> 
+        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"> 
+        <p class="submit"><input type="image" src="images/btn_donate_LG.gif" border="0" name="submit" alt=""> 
+        <img alt="" border="0" src="images/pixel.gif" width="1" height="1"></p> 
+        </form>
+      </div>
+      
+      <hr width="230" align="center" />
+      
+      <div class="sidebarcontentbox">
+        <h3 id="pStartPage-lblMonthlySummary">Monthly Summary</h3>
+        <div id="monthlySummary"></div>
+	  </div>
+	  
+      <hr width="230" align="center" />
+      
+      <div class="sidebarcontentbox">
+        <h3 id="pStartPage-lblDonationWall">Donation Wall</h3>
+        <div id="donateWall"></div>
+      </div>
+          
+    </div>
+  </div>
+  <p class="clear">&nbsp;</p>
+</div>
+
+
+</body>
+</html>

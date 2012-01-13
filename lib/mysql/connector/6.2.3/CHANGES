@@ -1,0 +1,47 @@
+Version 6.2.3
+- fixed InvalidOperationException when accessing Stream.ReadTimeout or Stream.WriteTimeout on CF
+  (bug #50321)
+- fixed entity framework function processing so that it handles stored functions properly
+  (bug #45277)
+- fixed a bug with prepared statements and unsigned bigint.  Patch also provided a nice speedup to reading
+  integer values from the wire (bug #49794)
+- fixed problem where not specifying the data type of the return value of a function caused it to 
+  mistakenly use Decimal as the return type (bug #49642)
+- fixed bug where a scipt that had an empty last line would cause an InvalidOperationException (bug #50344)
+- fixed bug in logging that kept no index and bad index warnings from being sent
+- fixed bug where giving a connection string option like (option=) and then trying to read
+  the option back via the property would fail (bug #51209)
+- fixed bug where a connection could not be reused in the IDE in some circumstances (bug #41629)
+- small performance fix (bug #51149)
+- fixed issue with script execution & multi-char delimiters (bug #46429)
+- fixed bug in table editor where clicking back on the last row added can sometimes
+  cause a ArgumentOutOfRange exception
+- fixed bug where a commands batchable command text was not getting reset when the 
+  command text was reset (bug #50444)
+- fixed bug where using a currently non-batchable command in a batch would throw an exception
+  (bug #50123)
+- fixed bug where binary or blob columns would prevent columns after that from appearing in the
+  query builder (bug #50171)
+- ScriptCompleted event handler now uses EventArgs.Empty instead of null
+- fixed parsing bug that was caused by special characters being jammed up beside a quoted identifier (bug #51610)
+- added feature where sql queries that are longer than 300 chars are normalized and a new
+  query normalized log line is issues right after query opened to give the query normalized text
+- fixed bug in sql generation when using a negated binary fragment in EF (bug #49850)
+- fixed bug in tokenization where a nonterminated string in sql will cause a CLR exception
+  rather than throwing a syntax exception (bug #51788)
+- added two requested features -- MySqlDataReader.GetFieldType(string columnname) &
+  MySqlDataReader.GetOrdinal() includes the name of the column in the exception when not found
+  (bug #47467)
+
+Version 6.2.2
+- Fix race condition during TransactionScope rollback (bug#35330)
+- When sending file to server (LOAD DATA INFILE) open the file for read only, not for read/write
+ (bug #48944)
+- Fixed precision calculation on decimal and newdecimal columns (bug #48171)
+- Fixed problem caused by us not including a 'REFERENCED_TABLE_CATALOG' column in our
+  foreign keys collection (bug #48974)
+
+Version 6.2.1
+- fixed SessionProvider to be compatible with 4.x MySQL, replaced TIMESTAMPDIFF with TIME_TO_SEC
+  (bug#47219)
+- implemented support for client SSL certificates

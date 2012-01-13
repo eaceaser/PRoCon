@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A9D8238-7DA4-4FB0-B0AA-9B6B01E425F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRoCon</RootNamespace>
+    <AssemblyName>PRoCon</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetZone>Internet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <ApplicationIcon>smiley48.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\ziplib\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Battlemap\BattlemapRoundChange.cs" />
+    <Compile Include="Controls\Battlemap\BattlemapViewTools.cs" />
+    <Compile Include="Controls\Battlemap\KillDisplayDetails.cs" />
+    <Compile Include="Controls\Battlemap\KillDisplay\KillDisplayColours.cs" />
+    <Compile Include="Controls\Battlemap\KillDisplay\KillDisplayPopup.cs" />
+    <Compile Include="Controls\Battlemap\MapImagePacks\MapImagePack.cs" />
+    <Compile Include="Controls\Battlemap\MapImagePacks\MapImagePackDictionary.cs" />
+    <Compile Include="Controls\Battlemap\MapObject.cs" />
+    <Compile Include="Controls\Battlemap\MapTextBlock.cs" />
+    <Compile Include="Controls\Battlemap\MapTextBlockString.cs" />
+    <Compile Include="Controls\Battlemap\MapTimeline\MapTimelineControl.cs" />
+    <Compile Include="Controls\Battlemap\MapTimeline\MapTimelineControlButton.cs" />
+    <Compile Include="Controls\Battlemap\MapTimeline\MapTimelineControlButtonType.cs" />
+    <Compile Include="Controls\Battlemap\MapTimeline\MapTimelineSeekButton.cs" />
+    <Compile Include="Controls\Battlemap\MapZoneDisplay\MapZoneControl.cs" />
+    <Compile Include="Controls\Battlemap\MapZoneDisplay\MapZonePointControl.cs" />
+    <Compile Include="Controls\Battlemap\TeamNamesDisplay\TeamNamesDisplayLegend.cs" />
+    <Compile Include="Controls\ControlsEx\CodRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BattlemapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BattlemapView.Designer.cs">
+      <DependentUpon>BattlemapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsEx\ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsEx\ListViewColumnSorter.cs" />
+    <Compile Include="Controls\ControlsEx\ListViewNF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsEx\PlayerListColumnSorter.cs" />
+    <Compile Include="Controls\ControlsEx\ToolStripNF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Maplist\uscMaplist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Maplist\uscMaplist.Designer.cs">
+      <DependentUpon>uscMaplist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\BFBC2\uscServerSettingsConfigGeneratorBFBC2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\BFBC2\uscServerSettingsConfigGeneratorBFBC2.Designer.cs">
+      <DependentUpon>uscServerSettingsConfigGeneratorBFBC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\BFBC2\uscServerSettingsGameplayBFBC2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\BFBC2\uscServerSettingsGameplayBFBC2.Designer.cs">
+      <DependentUpon>uscServerSettingsGameplayBFBC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\MOH\uscServerSettingsConfigGeneratorMoH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\MOH\uscServerSettingsConfigGeneratorMoH.Designer.cs">
+      <DependentUpon>uscServerSettingsConfigGeneratorMoH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\MOH\uscServerSettingsGameplayMoH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\MOH\uscServerSettingsGameplayMoH.Designer.cs">
+      <DependentUpon>uscServerSettingsGameplayMoH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettings.Designer.cs">
+      <DependentUpon>uscServerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsConfigGenerator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsConfigGenerator.Designer.cs">
+      <DependentUpon>uscServerSettingsConfigGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsConfiguration.Designer.cs">
+      <DependentUpon>uscServerSettingsConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsDetails.Designer.cs">
+      <DependentUpon>uscServerSettingsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsGameplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsGameplay.Designer.cs">
+      <DependentUpon>uscServerSettingsGameplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsLevelVariables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsLevelVariables.Designer.cs">
+      <DependentUpon>uscServerSettingsLevelVariables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsTeamKills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsTeamKills.Designer.cs">
+      <DependentUpon>uscServerSettingsTeamKills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsTextChatModeration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerSettings\uscServerSettingsTextChatModeration.Designer.cs">
+      <DependentUpon>uscServerSettingsTextChatModeration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextChatModeration\uscTextChatModerationListcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextChatModeration\uscTextChatModerationListcs.Designer.cs">
+      <DependentUpon>uscTextChatModerationListcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscAccountsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscAccountsPanel.Designer.cs">
+      <DependentUpon>uscAccountsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscChatPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscChatPanel.Designer.cs">
+      <DependentUpon>uscChatPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscConsolePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscConsolePanel.Designer.cs">
+      <DependentUpon>uscConsolePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscEventsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscEventsPanel.Designer.cs">
+      <DependentUpon>uscEventsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscListControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscListControlPanel.Designer.cs">
+      <DependentUpon>uscListControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscLoginPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscLoginPanel.Designer.cs">
+      <DependentUpon>uscLoginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscMapViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscMapViewer.Designer.cs">
+      <DependentUpon>uscMapViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscPage.Designer.cs">
+      <DependentUpon>uscPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscParentLayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscParentLayerControl.Designer.cs">
+      <DependentUpon>uscParentLayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscPlayerListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscPlayerListPanel.Designer.cs">
+      <DependentUpon>uscPlayerListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscPlayerPunishPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscPlayerPunishPanel.Designer.cs">
+      <DependentUpon>uscPlayerPunishPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscPluginPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscPluginPanel.Designer.cs">
+      <DependentUpon>uscPluginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscPrivilegesSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscPrivilegesSelection.Designer.cs">
+      <DependentUpon>uscPrivilegesSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscServerConnection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscServerConnection.Designer.cs">
+      <DependentUpon>uscServerConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscServerSettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscServerSettingsPanel.Designer.cs">
+      <DependentUpon>uscServerSettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\uscStartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\uscStartPage.Designer.cs">
+      <DependentUpon>uscStartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BasicConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BasicConsole.Designer.cs">
+      <DependentUpon>BasicConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageAccounts.Designer.cs">
+      <DependentUpon>frmManageAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GspUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GspUpdater.Designer.cs">
+      <DependentUpon>GspUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\BattlemapView.resx">
+      <DependentUpon>BattlemapView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Maplist\uscMaplist.resx">
+      <DependentUpon>uscMaplist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\BFBC2\uscServerSettingsGameplayBFBC2.resx">
+      <DependentUpon>uscServerSettingsGameplayBFBC2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\MOH\uscServerSettingsGameplayMoH.resx">
+      <DependentUpon>uscServerSettingsGameplayMoH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettings.resx">
+      <DependentUpon>uscServerSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsConfigGenerator.resx">
+      <DependentUpon>uscServerSettingsConfigGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsConfiguration.resx">
+      <DependentUpon>uscServerSettingsConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsDetails.resx">
+      <DependentUpon>uscServerSettingsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsGameplay.resx">
+      <DependentUpon>uscServerSettingsGameplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsLevelVariables.resx">
+      <DependentUpon>uscServerSettingsLevelVariables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsTeamKills.resx">
+      <DependentUpon>uscServerSettingsTeamKills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerSettings\uscServerSettingsTextChatModeration.resx">
+      <DependentUpon>uscServerSettingsTextChatModeration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextChatModeration\uscTextChatModerationListcs.resx">
+      <DependentUpon>uscTextChatModerationListcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscAccountsPanel.resx">
+      <DependentUpon>uscAccountsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscChatPanel.resx">
+      <DependentUpon>uscChatPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscConsolePanel.resx">
+      <DependentUpon>uscConsolePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscEventsPanel.resx">
+      <DependentUpon>uscEventsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscListControlPanel.resx">
+      <DependentUpon>uscListControlPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscLoginPanel.resx">
+      <DependentUpon>uscLoginPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscMapViewer.resx">
+      <DependentUpon>uscMapViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscPage.resx">
+      <DependentUpon>uscPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscParentLayerControl.resx">
+      <DependentUpon>uscParentLayerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscPlayerListPanel.resx">
+      <DependentUpon>uscPlayerListPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscPlayerPunishPanel.resx">
+      <DependentUpon>uscPlayerPunishPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscPluginPanel.resx">
+      <DependentUpon>uscPluginPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscPrivilegesSelection.resx">
+      <DependentUpon>uscPrivilegesSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscServerConnection.resx">
+      <DependentUpon>uscServerConnection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscServerSettingsPanel.resx">
+      <DependentUpon>uscServerSettingsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\uscStartPage.resx">
+      <DependentUpon>uscStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BasicConsole.resx">
+      <DependentUpon>BasicConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageAccounts.resx">
+      <DependentUpon>frmManageAccounts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GspUpdater.resx">
+      <DependentUpon>GspUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PRoCon.Core\PRoCon.Core.csproj">
+      <Project>{88912CB7-E755-476D-AFC2-CA0C34A29465}</Project>
+      <Name>PRoCon.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="smiley48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>REM Copy localization files to destination directory
+
+mkdir "$(ProjectDir)$(OutDir)Localization\"
+copy "$(ProjectDir)..\Resources\Localization\*.*" "$(ProjectDir)$(OutDir)Localization\"
+
+mkdir "$(ProjectDir)$(OutDir)Configs\"
+copy "$(ProjectDir)..\Resources\Configs\*.*" "$(ProjectDir)$(OutDir)Configs\"
+
+mkdir "$(ProjectDir)$(OutDir)Plugins\"
+mkdir "$(ProjectDir)$(OutDir)Plugins\BFBC2\"
+mkdir "$(ProjectDir)$(OutDir)Plugins\MOH\"
+copy "$(ProjectDir)..\Resources\DefaultPlugins\*.*" "$(ProjectDir)$(OutDir)Plugins\"
+copy "$(ProjectDir)..\Resources\DefaultPlugins\BFBC2\*.*" "$(ProjectDir)$(OutDir)Plugins\BFBC2\"
+copy "$(ProjectDir)..\Resources\DefaultPlugins\MOH\*.*" "$(ProjectDir)$(OutDir)Plugins\MOH\"
+
+copy "$(ProjectDir)..\Resources\GeoIP\*.*" "$(ProjectDir)$(OutDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

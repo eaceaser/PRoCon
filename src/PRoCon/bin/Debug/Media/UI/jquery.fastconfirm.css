@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/* You shouldn't touch this */
+.fast_confirm {
+	position: absolute;
+	
+	/* Position off-screen, show only when everything is ready */
+	top: -500px;
+	left: -500px;
+}
+
+/* You can configure this */
+.fast_confirm {
+	background-color: #fff;
+	/*font-size: 14px;*/
+	font-weight:bold;
+	text-align: center;
+	padding: 6px;
+	
+	border: 1px solid #aaa;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.fast_confirm .fast_confirm_top {
+	width: 26px;
+	height: 13px;
+	background: url('images/jquery.fastconfirm-1.0/fast_confirm_top.png');
+	position: absolute;
+	top: -11px;
+}
+
+.fast_confirm .fast_confirm_right {
+	width: 13px;
+	height: 26px;
+	background: url('images/jquery.fastconfirm-1.0/fast_confirm_right.png');
+	position: absolute;
+	right: -11px;
+}
+
+.fast_confirm .fast_confirm_bottom {
+	width: 26px;
+	height: 13px;
+	background: url('images/jquery.fastconfirm-1.0/fast_confirm_bottom.png');
+	position: absolute;
+	bottom: -11px;
+}
+
+.fast_confirm .fast_confirm_left {
+	width: 13px;
+	height: 26px;
+	background: url('images/jquery.fastconfirm-1.0/fast_confirm_left.png');
+	position: absolute;
+	left: -11px;
+}
+
+
+/* buttons */
+
+.fast_confirm .fast_confirm_buttons a {
+    display:block;
+    float:left;
+    margin:6px 12px 0px 12px;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:4px 10px 5px 7px; /* Links */
+}
+
+.fast_confirm .fast_confirm_buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+/* POSITIVE */
+
+.fast_confirm .fast_confirm_buttons a.fast_confirm_positive{
+    color:#529214;
+}
+.fast_confirm .fast_confirm_buttons a.fast_confirm_positive:hover {
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+.fast_confirm .fast_confirm_buttons a.fast_confirm_positive:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}
+
+/* DISABLED */
+
+.fast_confirm .fast_confirm_buttons a.fast_confirm_disabled {
+    color:#000000;
+	filter: alpha(opacity=20);
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+}
+
+/* NEGATIVE */
+
+.fast_confirm .fast_confirm_buttons a.fast_confirm_negative {
+    color:#d12f19;
+}
+.fast_confirm .fast_confirm_buttons a.fast_confirm_negative:hover {
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+.fast_confirm .fast_confirm_buttons a.fast_confirm_negative:active{
+    background-color:#d12f19;
+    border:1px solid #d12f19;
+    color:#fff;
+}
+
